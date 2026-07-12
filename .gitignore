@@ -1,0 +1,14 @@
+# Environment secrets (Contains your database passwords and LAN configurations)
+.env
+
+# Local database storage (Tells Git to ignore the raw database files Docker saves here)
+.database/
+
+# OS generated files (Hides local Windows system folder settings)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE and Editor settings (Hides personal VS Code workspace tweaks)
+.vscode/
+*.code-workspace

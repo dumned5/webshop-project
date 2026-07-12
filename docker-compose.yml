@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:15
+    container_name: ag_parts_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ag_admin
+      POSTGRES_PASSWORD: EszterkePW420
+      POSTGRES_DB: webshop-project
+    ports:
+      - "0.0.0.0:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
